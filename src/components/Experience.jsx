@@ -3,7 +3,7 @@ const experiences = [
         title: 'Machine Learning Researcher - SEMI/U&AI Labs',
         url: 'https://ecreager.github.io',
         date: 'April 2026 - Present',
-        desc: 'Incoming undergraduate researcher analyzing computer vision and generative AI models using PyTorch to evaluate privacy risks and develop ethical guidelines.'
+        desc: 'Undergraduate researcher analyzing computer vision and generative AI models using PyTorch to evaluate privacy risks and develop ethical guidelines.'
     },
     {
         title: 'Electrical and Firmware Team Member - Midnight Sun',

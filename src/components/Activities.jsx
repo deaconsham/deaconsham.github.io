@@ -2,7 +2,7 @@ const activities = [
     {
         title: 'Outreach Executive - CUTC Organization',
         url: 'https://cutc.ca/',
-        date: 'September 2025 - Present',
+        date: 'September 2025 - May 2026',
         desc: 'Expanded conference reach to 400+ participants by spearheading corporate outreach initiatives and directing a 70+ person hackathon.'
     },
     {
