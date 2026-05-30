@@ -5,9 +5,9 @@ const projects = [
         url: 'https://github.com/DeaconSham/RL-Bobble-League-Agent',
     },
     {
-        name: 'Delirium Risk Monitoring Wearable',
-        desc: 'STM32 wearable for patient vital monitoring',
-        url: 'https://github.com/DeaconSham/Delirium-Prevention-Wearable',
+        name: 'Badminton Matchmaking',
+        desc: 'Skill-based matchmaking for a badminton club',
+        url: 'https://github.com/deaconsham/badminton-skill-based-matchmaking'
     },
     {
         name: 'Neural Network in C++',
@@ -15,24 +15,14 @@ const projects = [
         url: 'https://github.com/deaconsham/neural-networks-in-cpp-cuda'
     },
     {
-        name: 'Badminton Matchmaking',
-        desc: 'Skill-based matchmaking for a badminton club',
-        url: 'https://github.com/deaconsham/badminton-skill-based-matchmaking'
+        name: 'Delirium Risk Monitoring Wearable',
+        desc: 'STM32 wearable for patient vital monitoring',
+        url: 'https://github.com/DeaconSham/Delirium-Prevention-Wearable',
     },
     {
         name: 'BENTOgelion',
         desc: 'A survival rover for MakeUofT 2026',
         url: 'https://github.com/DeaconSham/BENTOgelion',
-    },
-    {
-        name: 'Airline Booking Software',
-        desc: 'Console reservation system in C++',
-        url: 'https://github.com/DeaconSham/Airline-Booking-Software',
-    },
-    {
-        name: 'Sudoku',
-        desc: 'Generator and solver with backtracking',
-        url: 'https://github.com/DeaconSham/Sudoku',
     },
     {
         name: 'Particle Detection for Medical Imaging',
