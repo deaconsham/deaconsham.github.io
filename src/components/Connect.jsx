@@ -6,7 +6,7 @@ function Connect() {
                 <span className="ttc-badge" style={{ backgroundColor: '#8a999a' }}>6</span>
             </h2>
             <div className="connect-links">
-                <a href="https://github.com/DeaconSham" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/deaconsham" target="_blank" rel="noopener noreferrer">
                     Github
                 </a>
                 <a href="https://linkedin.com/in/deacon-sham" target="_blank" rel="noopener noreferrer">
@@ -16,14 +16,14 @@ function Connect() {
                     X
                 </a>
                 <a
-                    href="https://drive.google.com/file/d/1Vz7LkOVCqZUrtmVmwupCik191aQGLKqr/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1aDdTuGjxFjxuaIwNAa6tHyrDB1iEmybI/view?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
                     Resume
                 </a>
-                <a href="mailto:deaconsham@icloud.com">
-                    deaconsham@icloud.com
+                <a href="mailto:deacon.sham@uwaterloo.ca">
+                    deacon [dot] sham [at] uwaterloo [dot] ca
                 </a>
             </div>
         </section>
