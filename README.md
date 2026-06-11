@@ -1,3 +1,1 @@
-# Personal-Website
-
-My personal website and portfolio.
+my personal website and portfolio
