@@ -23,7 +23,7 @@ function Connect() {
                     Resume
                 </a>
                 <a href="mailto:deacon.sham@uwaterloo.ca">
-                    deacon [dot] sham [at] uwaterloo [dot] ca
+                    deacon.sham@uwaterloo.ca
                 </a>
             </div>
         </section>
