@@ -5,8 +5,6 @@ const stations = [
     { id: 'experience', label: 'EXPERIENCE' },
     { id: 'activities', label: 'ACTIVITIES' },
     { id: 'projects', label: 'PROJECTS' },
-    { id: 'skills', label: 'SKILLS' },
-    { id: 'connect', label: 'CONNECT' },
 ]
 
 const LINE_COLOUR = '#fccc0a'

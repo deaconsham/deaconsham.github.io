@@ -3,7 +3,7 @@ function Connect() {
         <section id="connect" className="section connect-section">
             <h2 className="section-label">
                 CONNECT
-                <span className="ttc-badge" style={{ backgroundColor: '#8a999a' }}>6</span>
+                <span className="ttc-badge" style={{ backgroundColor: '#8a999a' }}>5</span>
             </h2>
             <div className="connect-links">
                 <a href="https://github.com/deaconsham" target="_blank" rel="noopener noreferrer">
