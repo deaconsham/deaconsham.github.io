@@ -5,8 +5,8 @@ const projects = [
         url: 'https://github.com/DeaconSham/RL-Bobble-League-Agent',
     },
     {
-        name: 'HUME',
-        desc: 'A deterministic belief-revision engine (won the CORTEX track at Hack the 6ix)',
+        name: 'HUME: Belief-Revision Engine',
+        desc: 'Won the CORTEX track at Hack the 6ix \'26',
         url: 'https://devpost.com/software/the-industry-standard'
     },
     {
@@ -21,7 +21,7 @@ const projects = [
     },
     {
         name: 'BENTOgelion',
-        desc: 'A survival rover for MakeUofT 2026',
+        desc: 'A survival rover for MakeUofT \'26',
         url: 'https://devpost.com/software/bentogelion',
     },
     {
