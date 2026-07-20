@@ -5,14 +5,14 @@ const projects = [
         url: 'https://github.com/DeaconSham/RL-Bobble-League-Agent',
     },
     {
+        name: 'HUME',
+        desc: 'A deterministic belief-revision engine (won the CORTEX track at Hack the 6ix)',
+        url: 'https://devpost.com/software/the-industry-standard'
+    },
+    {
         name: 'Badminton Matchmaking',
         desc: 'Skill-based matchmaking for a badminton club',
         url: 'https://github.com/deaconsham/badminton-skill-based-matchmaking'
-    },
-    {
-        name: 'Neural Network in C++',
-        desc: 'MNIST MLP implementation in C++/STL',
-        url: 'https://github.com/deaconsham/neural-networks-in-cpp-cuda'
     },
     {
         name: 'Delirium Risk Monitoring Wearable',
@@ -22,7 +22,7 @@ const projects = [
     {
         name: 'BENTOgelion',
         desc: 'A survival rover for MakeUofT 2026',
-        url: 'https://github.com/DeaconSham/BENTOgelion',
+        url: 'https://devpost.com/software/bentogelion',
     },
     {
         name: 'Particle Detection for Medical Imaging',
