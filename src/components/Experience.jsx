@@ -3,19 +3,13 @@ const experiences = [
         title: 'Machine Learning Researcher - SEMI/U&AI Labs',
         url: 'https://ecreager.github.io',
         date: 'April 2026 - Present',
-        desc: 'Undergraduate researcher analyzing computer vision and generative AI models using PyTorch to evaluate privacy risks and develop ethical guidelines.'
+        desc: 'Undergraduate researcher analyzing computer vision and facial recognition models using PyTorch to evaluate privacy risks and develop ethical guidelines.'
     },
     {
         title: 'Electrical and Firmware Team Member - Midnight Sun',
         url: 'https://www.uwmidsun.com/',
         date: 'September 2025 - Present',
         desc: 'Ensured voltage system protection by implementing I2C sensor drivers and developing C drivers for high voltage charger safety alerts.'
-    },
-    {
-        title: 'STEM Outreach Instructor - Carleton University',
-        url: 'https://carleton.ca/vv/',
-        date: 'January 2026 - April 2026',
-        desc: 'Empowered 2,000+ students across 20+ schools by delivering 10+ curriculum aligned technical workshops and coordinating program logistics.'
     },
     {
         title: 'Quantum Photonics Researcher - SQO Group',

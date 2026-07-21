@@ -1,5 +1,11 @@
 const activities = [
     {
+        title: 'STEM Outreach Instructor - Carleton University',
+        url: 'https://carleton.ca/vv/',
+        date: 'January 2026 - April 2026',
+        desc: 'Empowered 2,000+ students across 20+ schools by delivering 10+ curriculum aligned technical workshops and coordinating program logistics.'
+    },
+    {
         title: 'Outreach Executive - CUTC Organization',
         url: 'https://cutc.ca/',
         date: 'September 2025 - May 2026',
