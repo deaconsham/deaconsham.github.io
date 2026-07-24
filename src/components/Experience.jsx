@@ -1,5 +1,11 @@
 const experiences = [
     {
+        title: 'Software Development Intern - Ford Motor Company',
+        url: 'https://www.ford.ca',
+        date: 'September 2026',
+        desc: 'Incoming Fall \'26 product development team developing AI agents and embedded systems for vehicular infotainment technology.'
+    },
+    {
         title: 'Machine Learning Researcher - SEMI/U&AI Labs',
         url: 'https://ecreager.github.io',
         date: 'April 2026 - Present',
