@@ -12,13 +12,13 @@ const activities = [
         desc: 'Expanded conference reach to 400+ participants by spearheading corporate outreach initiatives and directing a 70+ person hackathon.'
     },
     {
-        title: 'NCCP Certfied Coach - Power Badminton Academy',
+        title: 'NCCP Certified Coach - Power Badminton Academy',
         url: 'https://www.ottawapba.ca/',
         date: 'September 2023 - June 2024',
         desc: 'Launched a new club attracting 50+ inaugural participants and logging 500+ coaching hours by managing all phases of conception and implementation.'
     },
     {
-        title: 'NCCP Certfied Coach - Soong Badminton Academy',
+        title: 'NCCP Certified Coach - Soong Badminton Academy',
         url: 'https://www.badmintonontario.ca/directory/soong-badminton-academy/',
         date: 'October 2022 - August 2023',
         desc: 'Improved the technical skills of 200+ athletes by developing 10+ customized lesson plans and providing systematic, active feedback during training.'
