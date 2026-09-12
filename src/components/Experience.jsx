@@ -3,7 +3,7 @@ const experiences = [
         title: 'Software Engineering - Ford Motor Company',
         url: 'https://www.ford.ca',
         date: 'September 2026 - December 2026',
-        desc: 'Developing AI agents and embedded systems for SYNC vehicular infotainment technology.'
+        desc: 'Developing AI agents and embedded systems for vehicular infotainment technology.'
     },
     {
         title: 'Machine Learning Researcher - SEMI/U&AI Labs',
