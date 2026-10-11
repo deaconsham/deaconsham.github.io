@@ -1,8 +1,18 @@
 const projects = [
     {
+        name: 'Operating System Kernel',
+        desc: 'Rasbperry Pi Linux Kernel based operating system',
+        url: 'https://github.com/deaconsham/raspberry-pi-os'
+    },
+    {
+        name: 'FPGA Robot Arm Controller',
+        desc: 'Verilog state machine for 2D arm motion controller',
+        url: 'https://github.com/deaconsham/ece124-digital-circuits/tree/main/Lab4'
+    },
+    {
         name: 'RL Bobble League Agent',
         desc: 'RL model for a turn-based soccer game',
-        url: 'https://github.com/DeaconSham/RL-Bobble-League-Agent',
+        url: 'https://github.com/DeaconSham/RL-Bobble-League-Agent'
     },
     {
         name: 'HUME: Belief-Revision Engine',
