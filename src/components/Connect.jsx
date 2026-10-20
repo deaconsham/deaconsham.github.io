@@ -13,7 +13,7 @@ function Connect() {
                     Linkedin
                 </a>
                 <a
-                    href="https://drive.google.com/file/d/1B2SxBGVyW1Rf_Tl5L586X4224IMyBVIk/view?usp=sharing"
+                    href="https://drive.google.com/file/d/197gBnQ1InF8JcjICA3ipaPhwepgRXzaI/view?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
