@@ -1,12 +1,7 @@
 import { useState, useEffect, useCallback, useRef } from 'react'
+import { sections } from '../sections'
 
-const stations = [
-    { id: 'bio', label: 'BIO', short: 'BIO' },
-    { id: 'experience', label: 'EXPERIENCE', short: 'EXP' },
-    { id: 'activities', label: 'ACTIVITIES', short: 'ACT' },
-    { id: 'projects', label: 'PROJECTS', short: 'PROJ' },
-    { id: 'publications', label: 'PUBLICATIONS', short: 'PUBS' },
-]
+const stations = sections.filter((section) => section.inNav)
 
 const DEFAULT_WIDTH = 620
 const COMPACT_BREAKPOINT = 480
@@ -57,19 +52,32 @@ function Navigation() {
     }, [])
 
     useEffect(() => {
-        updateActiveStation()
+        // Initial check runs on the next frame, after layout, rather than synchronously in the effect
+        const frame = requestAnimationFrame(updateActiveStation)
         window.addEventListener('scroll', updateActiveStation, { passive: true })
-        return () => window.removeEventListener('scroll', updateActiveStation)
+        return () => {
+            cancelAnimationFrame(frame)
+            window.removeEventListener('scroll', updateActiveStation)
+        }
     }, [updateActiveStation])
 
     const handleClick = (id) => {
+        const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+        const behavior = reduceMotion ? 'auto' : 'smooth'
         if (id === 'bio') {
-            window.scrollTo({ top: 0, behavior: 'smooth' })
+            window.scrollTo({ top: 0, behavior })
         } else {
             const el = document.getElementById(id)
             if (el) {
-                el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+                el.scrollIntoView({ behavior, block: 'start' })
             }
+        }
+    }
+
+    const handleKeyDown = (e, id) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault()
+            handleClick(id)
         }
     }
 
@@ -87,6 +95,11 @@ function Navigation() {
     // Only real mouse pointers get hover; touch taps would otherwise leave a stuck highlight
     const handlePointerEnter = (e, i) => {
         if (e.pointerType === 'mouse') setHoveredIndex(i)
+    }
+
+    // Keyboard focus reuses the hover highlight; taps (which also focus) are ignored
+    const handleFocus = (e, i) => {
+        if (e.currentTarget.matches(':focus-visible')) setHoveredIndex(i)
     }
 
     return (
@@ -119,9 +132,16 @@ function Navigation() {
                             <g
                                 key={station.id}
                                 className="subway-station-group"
+                                role="link"
+                                tabIndex={0}
+                                aria-label={`Go to ${station.label.toLowerCase()}`}
+                                aria-current={i === activeIndex ? 'location' : undefined}
                                 onClick={() => handleClick(station.id)}
+                                onKeyDown={(e) => handleKeyDown(e, station.id)}
                                 onPointerEnter={(e) => handlePointerEnter(e, i)}
                                 onPointerLeave={() => setHoveredIndex(null)}
+                                onFocus={(e) => handleFocus(e, i)}
+                                onBlur={() => setHoveredIndex(null)}
                                 style={{ cursor: 'pointer' }}
                             >
                                 {/*Invisible hit area so the whole slot is tappable*/}

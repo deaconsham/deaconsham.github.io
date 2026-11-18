@@ -1,9 +1,16 @@
+import LineBadge from './LineBadge'
 const experiences = [
     {
         title: 'Software Engineering Intern - Ford Motor Company',
         url: 'https://www.ford.ca',
         date: 'September 2026 - Present',
         desc: 'Building on-device AI and LLM tooling for in-vehicle infotainment.'
+    },
+    {
+        title: 'Analog Design Member - UWASIC',
+        url: 'https://uwasic.com',
+        date: 'September 2026 - Present',
+        desc: 'Designed a two-stage op-amp in SkyWater 130 nm and now co-designing the team\'s PAM4 SerDes chip.'
     },
     {
         title: 'Machine Learning Researcher - SEMI/U&AI Labs',
@@ -18,12 +25,6 @@ const experiences = [
         desc: 'Writing STM32 firmware in C/C++ with FreeRTOS for the solar car\'s telemetry, lighting and battery systems.'
     },
     {
-        title: 'Analog Design Member - UWASIC',
-        url: 'https://uwasic.com',
-        date: 'September 2026 - Present',
-        desc: 'Designed a two-stage op-amp in SkyWater 130 nm and now co-designing the team\'s PAM4 SerDes chip.'
-    },
-    {
         title: 'Quantum Photonics Researcher - SQO Group',
         url: 'https://sqogroup.ca/',
         date: 'January 2024 - August 2024',
@@ -36,11 +37,11 @@ function Experience() {
         <section id="experience" className="section experience-section">
             <h2 className="section-label">
                 EXPERIENCE
-                <span className="ttc-badge" style={{ backgroundColor: '#00933c' }}>2</span>
+                <LineBadge section="experience" />
             </h2>
 
-            {experiences.map((exp, index) => (
-                <div className="experience-block" key={index}>
+            {experiences.map((exp) => (
+                <div className="experience-block" key={exp.title}>
                     <div className="experience-header">
                         <a href={exp.url} target="_blank" rel="noopener noreferrer">
                             {exp.title}

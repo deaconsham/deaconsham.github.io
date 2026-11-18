@@ -1,3 +1,4 @@
+import LineBadge from './LineBadge'
 const activities = [
     {
         title: 'STEM Outreach Instructor - Carleton University',
@@ -30,11 +31,11 @@ function Activities() {
         <section id="activities" className="section experience-section">
             <h2 className="section-label">
                 ACTIVITIES
-                <span className="ttc-badge" style={{ backgroundColor: '#0085cd' }}>3</span>
+                <LineBadge section="activities" />
             </h2>
 
-            {activities.map((exp, index) => (
-                <div className="experience-block" key={index}>
+            {activities.map((exp) => (
+                <div className="experience-block" key={exp.title}>
                     <div className="experience-header">
                         <a href={exp.url} target="_blank" rel="noopener noreferrer">
                             {exp.title}

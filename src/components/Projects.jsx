@@ -1,7 +1,8 @@
+import LineBadge from './LineBadge'
 const projects = [
     {
         name: 'Operating System Kernel',
-        desc: 'Rasbperry Pi Linux Kernel based operating system',
+        desc: 'Raspberry Pi Linux Kernel based operating system',
         url: 'https://github.com/deaconsham/raspberry-pi-os'
     },
     {
@@ -46,7 +47,7 @@ function Projects() {
         <section id="projects" className="section projects-section">
             <h2 className="section-label">
                 PROJECTS
-                <span className="ttc-badge" style={{ backgroundColor: '#b933ad' }}>4</span>
+                <LineBadge section="projects" />
             </h2>
             <ul className="project-list">
                 {projects.map((project) => (

@@ -1,16 +1,18 @@
+import LineBadge from './LineBadge'
+
 function Connect() {
     return (
         <section id="connect" className="section connect-section">
             <h2 className="section-label">
                 CONNECT
-                <span className="ttc-badge" style={{ backgroundColor: '#8a999a' }}>6</span>
+                <LineBadge section="connect" />
             </h2>
             <div className="connect-links">
                 <a href="https://github.com/deaconsham" target="_blank" rel="noopener noreferrer">
-                    Github
+                    GitHub
                 </a>
                 <a href="https://linkedin.com/in/deacon-sham" target="_blank" rel="noopener noreferrer">
-                    Linkedin
+                    LinkedIn
                 </a>
                 <a
                     href="https://drive.google.com/file/d/197gBnQ1InF8JcjICA3ipaPhwepgRXzaI/view?usp=sharing"

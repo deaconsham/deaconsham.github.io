@@ -1,3 +1,4 @@
+import LineBadge from './LineBadge'
 const publications = [
     {
         title: 'Co-designing research tools for effective regulation: Using context-based LLMs to bridge policymaking knowledge gaps',
@@ -18,7 +19,7 @@ function Publications() {
         <section id="publications" className="section experience-section">
             <h2 className="section-label">
                 PUBLICATIONS
-                <span className="ttc-badge" style={{ backgroundColor: '#f58025' }}>5</span>
+                <LineBadge section="publications" />
             </h2>
 
             {publications.map((pub) => (
