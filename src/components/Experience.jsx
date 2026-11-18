@@ -15,7 +15,7 @@ const experiences = [
         title: 'Electrical and Firmware Member - Midnight Sun',
         url: 'https://www.uwmidsun.com/',
         date: 'September 2025 - Present',
-        desc: 'Designed the firmware for the vehicle\'s telemetry, lighting and battery management systems.'
+        desc: 'Designed the firmware for the vehicle\'s telemetry, lighting and battery management systems in C/C++ and FreeRTOS.'
     },
     {
         title: 'Analog Design Member - UWASIC',
