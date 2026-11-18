@@ -15,13 +15,13 @@ const experiences = [
         title: 'Electrical and Firmware Member - Midnight Sun',
         url: 'https://www.uwmidsun.com/',
         date: 'September 2025 - Present',
-        desc: 'Ensured voltage system protection by implementing I2C sensor drivers and developing C drivers for high voltage charger safety alerts.'
+        desc: 'Designed the firmware for the vehicle\'s telemetry, lighting and battery management systems.'
     },
     {
         title: 'Analog Design Member - UWASIC',
         url: 'https://uwasic.com',
         date: 'September 2026 - Present',
-        desc: 'Designed a two-stage op-amp in SkyWater 130 and co-designing the team’s PAM4 SerDes chip.'
+        desc: 'Designed a two-stage op-amp in SkyWater 130 and currently working on the team\'s PAM4 SerDes chip.'
     },
     {
         title: 'Quantum Photonics Researcher - SQO Group',
