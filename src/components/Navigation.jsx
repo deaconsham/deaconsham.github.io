@@ -1,11 +1,18 @@
-import { useState, useEffect, useCallback } from 'react'
+import { useState, useEffect, useCallback, useRef } from 'react'
 
 const stations = [
-    { id: 'bio', label: 'BIO' },
-    { id: 'experience', label: 'EXPERIENCE' },
-    { id: 'activities', label: 'ACTIVITIES' },
-    { id: 'projects', label: 'PROJECTS' },
+    { id: 'bio', label: 'BIO', short: 'BIO' },
+    { id: 'experience', label: 'EXPERIENCE', short: 'EXP' },
+    { id: 'activities', label: 'ACTIVITIES', short: 'ACT' },
+    { id: 'projects', label: 'PROJECTS', short: 'PROJ' },
+    { id: 'publications', label: 'PUBLICATIONS', short: 'PUBS' },
 ]
+
+const DEFAULT_WIDTH = 620
+const COMPACT_BREAKPOINT = 480
+// Approximate rendered width of a label: 9px font + 0.25em letter-spacing
+const CHAR_WIDTH = 9 * (0.65 + 0.25)
+const labelWidth = (text) => text.length * CHAR_WIDTH
 
 const LINE_COLOUR = '#fccc0a'
 const COLOUR_PASSED = '#00933c'
@@ -14,6 +21,20 @@ const COLOUR_UPCOMING = '#ee352e'
 function Navigation() {
     const [activeIndex, setActiveIndex] = useState(0)
     const [hoveredIndex, setHoveredIndex] = useState(null)
+    const [svgWidth, setSvgWidth] = useState(DEFAULT_WIDTH)
+    const innerRef = useRef(null)
+
+    // Keep viewBox units equal to CSS pixels so labels never shrink on small screens
+    useEffect(() => {
+        const el = innerRef.current
+        if (!el || typeof ResizeObserver === 'undefined') return
+        const observer = new ResizeObserver(([entry]) => {
+            const width = Math.round(entry.contentRect.width)
+            if (width > 0) setSvgWidth(width)
+        })
+        observer.observe(el)
+        return () => observer.disconnect()
+    }, [])
 
     const updateActiveStation = useCallback(() => {
         const scrollY = window.scrollY + window.innerHeight * 0.2
@@ -52,14 +73,25 @@ function Navigation() {
         }
     }
 
-    const svgWidth = 620
+    const compact = svgWidth < COMPACT_BREAKPOINT
+    const getLabel = (station) => (compact ? station.short : station.label)
     const lineY = 22
-    const padding = 15
-    const getStationX = (i) => padding + i * ((svgWidth - padding * 2) / (stations.length - 1))
+    // Inset the line just enough for the first/last labels to stay inside the bar
+    const padding = Math.max(
+        15,
+        Math.ceil(Math.max(labelWidth(getLabel(stations[0])), labelWidth(getLabel(stations[stations.length - 1]))) / 2) + 4
+    )
+    const spacing = (svgWidth - padding * 2) / (stations.length - 1)
+    const getStationX = (i) => padding + i * spacing
+
+    // Only real mouse pointers get hover; touch taps would otherwise leave a stuck highlight
+    const handlePointerEnter = (e, i) => {
+        if (e.pointerType === 'mouse') setHoveredIndex(i)
+    }
 
     return (
         <nav className="subway-nav" aria-label="Section navigation">
-            <div className="subway-nav-inner">
+            <div className="subway-nav-inner" ref={innerRef}>
                 <svg
                     className="subway-nav-svg"
                     viewBox={`0 0 ${svgWidth} 52`}
@@ -88,10 +120,16 @@ function Navigation() {
                                 key={station.id}
                                 className="subway-station-group"
                                 onClick={() => handleClick(station.id)}
-                                onMouseEnter={() => setHoveredIndex(i)}
-                                onMouseLeave={() => setHoveredIndex(null)}
+                                onPointerEnter={(e) => handlePointerEnter(e, i)}
+                                onPointerLeave={() => setHoveredIndex(null)}
                                 style={{ cursor: 'pointer' }}
                             >
+                                {/*Invisible hit area so the whole slot is tappable*/}
+                                <rect
+                                    x={cx - spacing / 2} y={0}
+                                    width={spacing} height={52}
+                                    fill="transparent"
+                                />
                                 {/*Big station — outer ring*/}
                                 <circle
                                     cx={cx} cy={lineY}
@@ -117,7 +155,7 @@ function Navigation() {
                                     className="subway-station-label"
                                     fill={labelColour}
                                 >
-                                    {station.label}
+                                    {getLabel(station)}
                                 </text>
                             </g>
                         )

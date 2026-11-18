@@ -241,7 +241,8 @@ a:hover {
     gap: 1rem;
 }
 
-.experience-header a {
+.experience-header a,
+.experience-title {
     font-weight: 550;
     -webkit-text-stroke: 0;
 }

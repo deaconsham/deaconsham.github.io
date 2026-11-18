@@ -5,6 +5,7 @@ import Bio from './components/Bio'
 import Experience from './components/Experience'
 import Activities from './components/Activities'
 import Projects from './components/Projects'
+import Publications from './components/Publications'
 import Connect from './components/Connect'
 import Footer from './components/Footer'
 
@@ -19,6 +20,7 @@ function App() {
                 <Experience />
                 <Activities />
                 <Projects />
+                <Publications />
                 <Connect />
                 <Footer />
             </div>
