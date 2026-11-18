@@ -3,7 +3,7 @@ const experiences = [
         title: 'Software Engineering Intern - Ford Motor Company',
         url: 'https://www.ford.ca',
         date: 'September 2026 - Present',
-        desc: 'Building on-device AI and LLM tooling for in-vehicle infotainment, including a log-analysis tool that cut root-cause analysis time by 60%.'
+        desc: 'Building on-device AI and LLM tooling for in-vehicle infotainment.'
     },
     {
         title: 'Machine Learning Researcher - SEMI/U&AI Labs',
@@ -15,19 +15,19 @@ const experiences = [
         title: 'Electrical and Firmware Member - Midnight Sun',
         url: 'https://www.uwmidsun.com/',
         date: 'September 2025 - Present',
-        desc: 'Writing STM32 firmware in C with FreeRTOS for the solar car\'s telemetry, lighting and battery systems, and laying out the telemetry board PCB.'
+        desc: 'Writing STM32 firmware in C/C++ with FreeRTOS for the solar car\'s telemetry, lighting and battery systems.'
     },
     {
         title: 'Analog Design Member - UWASIC',
         url: 'https://uwasic.com',
         date: 'September 2026 - Present',
-        desc: 'Designed a two-stage op-amp in SkyWater 130 nm and now co-designing the demux and DFE for the team\'s PAM4 SerDes chip.'
+        desc: 'Designed a two-stage op-amp in SkyWater 130 nm and now co-designing the team\'s PAM4 SerDes chip.'
     },
     {
         title: 'Quantum Photonics Researcher - SQO Group',
         url: 'https://sqogroup.ca/',
         date: 'January 2024 - August 2024',
-        desc: 'Fabricated voltage-tunable liquid crystal optics, built a polarization tomography testbed, and automated Stokes vector analysis in Python, cutting processing time by 90%.'
+        desc: 'Fabricated voltage-tunable liquid crystal optics, built a polarization tomography testbed, and automated Stokes vector analysis.'
     }
 ];
 
