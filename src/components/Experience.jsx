@@ -12,10 +12,16 @@ const experiences = [
         desc: 'Undergraduate researcher analyzing computer vision and facial recognition models using PyTorch to evaluate privacy risks and develop ethical guidelines.'
     },
     {
-        title: 'Electrical and Firmware Team Member - Midnight Sun',
+        title: 'Electrical and Firmware Member - Midnight Sun',
         url: 'https://www.uwmidsun.com/',
         date: 'September 2025 - Present',
         desc: 'Ensured voltage system protection by implementing I2C sensor drivers and developing C drivers for high voltage charger safety alerts.'
+    },
+    {
+        title: 'Analog Design Member - UWASIC',
+        url: 'https://uwasic.com',
+        date: 'September 2026 - Present',
+        desc: 'Designed a two-stage op-amp in SkyWater 130 and co-designing the team’s PAM4 SerDes chip.'
     },
     {
         title: 'Quantum Photonics Researcher - SQO Group',
