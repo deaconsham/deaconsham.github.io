@@ -1,33 +1,33 @@
 const experiences = [
     {
-        title: 'Software Engineering - Ford Motor Company',
+        title: 'Software Engineering Intern - Ford Motor Company',
         url: 'https://www.ford.ca',
         date: 'September 2026 - Present',
-        desc: 'Developing AI agents and embedded systems for vehicular infotainment technology.'
+        desc: 'Building on-device AI and LLM tooling for in-vehicle infotainment, including a log-analysis tool that cut root-cause analysis time by 60%.'
     },
     {
         title: 'Machine Learning Researcher - SEMI/U&AI Labs',
         url: 'https://ecreager.github.io',
         date: 'April 2026 - Present',
-        desc: 'Undergraduate researcher analyzing computer vision and facial recognition models using PyTorch to evaluate privacy risks and develop ethical guidelines.'
+        desc: 'Building a retrieval-augmented LLM tool that helps policymakers navigate facial recognition regulation, presented at the 4S 2026 conference.'
     },
     {
         title: 'Electrical and Firmware Member - Midnight Sun',
         url: 'https://www.uwmidsun.com/',
         date: 'September 2025 - Present',
-        desc: 'Designed the firmware for the vehicle\'s telemetry, lighting and battery management systems in C/C++ and FreeRTOS.'
+        desc: 'Writing STM32 firmware in C with FreeRTOS for the solar car\'s telemetry, lighting and battery systems, and laying out the telemetry board PCB.'
     },
     {
         title: 'Analog Design Member - UWASIC',
         url: 'https://uwasic.com',
         date: 'September 2026 - Present',
-        desc: 'Designed a two-stage op-amp in SkyWater 130 and currently working on the team\'s PAM4 SerDes chip.'
+        desc: 'Designed a two-stage op-amp in SkyWater 130 nm and now co-designing the demux and DFE for the team\'s PAM4 SerDes chip.'
     },
     {
         title: 'Quantum Photonics Researcher - SQO Group',
         url: 'https://sqogroup.ca/',
         date: 'January 2024 - August 2024',
-        desc: 'Reduced manual data processing time by 90% by developing an automated Python program and fabricating voltage-tunable liquid crystal optics.'
+        desc: 'Fabricated voltage-tunable liquid crystal optics, built a polarization tomography testbed, and automated Stokes vector analysis in Python, cutting processing time by 90%.'
     }
 ];
 
